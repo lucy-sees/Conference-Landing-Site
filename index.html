@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Lucy W. Mwangi" content="First Capstone Project">
+  <title>Mobile view</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,700&family=Poppins:ital,wght@0,500;0,600;0,700;1,200;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Mono&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mobile.css">
+  <link rel="stylesheet" href="./desktop.css">
+</head>
+
+<body class="mx-0">
+  <section id="headline" class="container-fluid m-sm-0 m-lg-0 mx-0">
+    <header>
+      <div class="contact-icon-container container-fluid p-4 d-md-flex justify-content-end align-items-center d-none">
+        <div class="icons d-flex justify-content-around w-25 align-items-center">
+          <a href="#/"><i class="fa fa-facebook text-white"></i></a>
+          <a href="#/"><i class="fa fa-twitter text-white"></i></a>
+          <span class="text-white">English</span>
+          <span class="text-white">My Page</span>
+          <span class="text-white">Log Out</span>
+        </div>
+      </div>
+      <!-- navbar -->
+      <nav class="d-none d-md-block d-md-flex justify-content-between desktop-navbar container-fluid">
+        <div class="logo-container navbar-brand d-flex fw-bolder">
+          <a href="./index.html">
+            <div class="d-flex"><i class="fas fa-plane d-inline-flex text-dark-emphasis fs-4 p-0"></i><p class="brand text-dark-emphasis fs-3">AVIATOR</p></div>
+          </a>
+        </div>
+        <ul class="nav-container d-flex align-items-center">
+          <li><a href="./index.html" id="first-child">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#headline">Program</a></li>
+          <li><a href="#join-program">Join</a></li>
+          <li><a href="#sponsor-section">Sponsors</a></li>
+          <li><a href="#speakers-featured-section">News</a></li>
+          <li><a href="#footer-section" id="last-child">AV Campaign</a></li>
+        </ul>
+      </nav>
+      <div class="menu-bar d-block d-md-none"><i class="fa-solid fa-bars p-3" id="open-btn"></i></div>
+      <nav id="navbar-wrapper" class="d-md-none">
+
+        <div id="nav-wrapper">
+          <div class="logo-container">
+            <a href="./index.html">
+              <div class="d-flex"><i class="fas fa-plane d-inline-flex text-dark-emphasis fs-4 p-0 m-5"></i><p class="brand text-dark-emphasis fs-3">AVIATOR</p></div>
+            </a>
+            <i class="fa-solid fa-xmark fs-1 ps-5 pt-4" id="close-btn"></i>
+          </div>
+          <ul class="nav-menu-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#headline">Program</a></li>
+            <li><a href="#join-program">Join</a></li>
+            <li><a href="#sponsor-section">Sponsors</a></li>
+            <li><a href="#speakers-featured-section">News</a></li>
+            <li><a href="#footer-section">AV Campaign</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- headline section  -->
+    <section id="intro">
+      <div class="row">
+        <div class="col" id="intro-header">
+          <h3>"Hello there, aviators!"</h3>
+          <h1>The Future of Aviation<br> Conference 2023</h1>
+        </div>
+        <div class="intro-text-container">
+          <p>Welcome to the most extraordinary and intellectually stimulating event of the century – The Future of
+            Aviation Conference.</p>
+        </div>
+        <div id="date-time-container">
+          <h4>2023.09.7(THU) ~ 15(FRI)</h4>
+          <p>Dedan Kimathi Street Nairobi</p>
+        </div>
+    </section>
+
+  </section>
+
+  <!-- Main program starts -->
+  <article class="main-program">
+    <section class="main-program-wrapper container">
+      <section class="main-program-header">
+        <h2>Main Program</h2>
+        <div class="main-border"></div>
+      </section>
+      <section class="main-proram-contents container">
+        <div class="row">
+
+          <div class="program-content col col-md-2">
+            <div class="image-wrap row align-self-center">
+              <img class="solo-content" src="./images/lecture.svg" alt="lecture">
+            </div>
+            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">Lecture</span></div>
+            <div class="col-7  col-md-12 ps-3 px-md-0 pe-0">
+              <p class="fw-bold text-white text-center">Immerse yourself in captivating lectures from renowned
+                  aviation pioneers, as they share their invaluable experiences and visionary insights.</p>
+            </div>
+          </div>
+
+          <div class="program-content col col-md-2">
+            <div class="image-wrap row align-self-center">
+              <img class="solo-content" src="./images/exhibition.svg" alt="exhibition">
+            </div>
+            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">Exhibition</span></div>
+            <div class="col-7 col-md-12 ps-3 pe-0 px-md-0">
+              <p class="fw-bold text-white text-center">At our conference, participants will engage in
+                collaborative knowledge exchange, fostering an environment of shared ideas and
+                groundbreaking discoveries.</p>
+            </div>
+          </div>
+
+          <div class="program-content col col-md-2">
+            <div class="image-wrap row align-self-center">
+              <img class="solo-content" src="./images/forum.svg" alt="lecture">
+            </div>
+            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">Forum</span></div>
+            <div class="col-7 col-md-12 ps-3 pe-0 px-md-0">
+              <p class="fw-bold text-white text-center">Join us for an interactive forum where industry
+                  leaders and enthusiasts alike come together to discuss the latest trends and advancements in
+                  the field of aviation.</p>
+            </div>
+          </div>
+          <div class="program-content col col-md-2">
+            <div class="image-wrap row align-self-center">
+              <img class="solo-content" src="./images/station.svg" alt="lecture">
+            </div>
+            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">Workshop</span></div>
+            <div class="col-7 col-md-12 ps-3 px-md-0 pe-0">
+              <p class="fw-bold text-white text-center">Dive into hands-on workshops led by experts, honing
+                    your skills and gaining practical insights into cutting-edge aviation technologies and
+                    practices.</p>
+            </div>
+          </div>
+
+          <div class="program-content col col-md-2">
+            <div class="image-wrap row align-self-center">
+              <img class="solo-content" src="./images/ignite.svg" alt="lecture">
+            </div>
+            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">AV Ignite</span></div>
+            <div class="col-7 col-md-12 ps-3 pe-0">
+              <p class="fw-bold text-white text-center">Forge meaningful connections with like-minded
+                individuals and industry professionals, expanding your professional network and paving the
+                way for future collaborations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="join-btn">
+          <button type="button" class="join btn btn-lg">Join Now!</button>
+        </div>
+
+        <div class="see-program-text-container d-none d-md-block">
+          <a href="" class="">
+            <h5 class="text-white text-uppercase">See the Whole Program</h5>
+          </a>
+        </div>
+      </section>
+    </section>
+  </article>
+
+  <!-- featured speakers -->
+  <section id="speakers-featured-section" class="">
+    <h2 class="text-center text-black fw-bold " id="feature-title">Featured Speakers</h2>
+    <div class="line"></div>
+    <div class="row speaker-container row-cols-1 row-cols-md-2 mt-5" id="speaker-container">
+
+    </div>
+  </section>
+
+  <!-- more button -->
+  <section id="more-button-section" class="container-fluid">
+    <div class="more-button-container container mt-5">
+      <button type="button" class="btn btn-default border btn-lg w-100 mb-5">More<i class="fa fa-chevron-down m-2 orange-chevron"></i></button>
+    </div>
+  </section>
+
+  <!-- sponsors  -->
+  <section class="container-fluid d-none d-md-block d-lg-block" id="sponsor-section">
+     <h2 class="text-center " id="sponsor-title">Partner</h2>
+    <div id="middle-line"></div>
+    <div class="d-flex partners flex-wrap">
+      <img src="./images/SpaceX.png" alt="SpaceX" class="logo-img">
+      <img src="./images/KenyaAirways.png" alt="KenyaAirways" class="logo-img">
+      <img src="./images/airbus.png" alt="airbus" class="logo-img">
+      <img src="./images/boeing.png" alt="boeing" class="logo-img">
+      <img src="./images/airbnb.png" alt="airbnb" class="logo-img">
+    </div>
+  </section>
+
+  <!-- credit  -->
+  <section id="footer-section" class="container-fluid mt-5 py-4 d-none d-md-block d-lg-block">
+    <div class="footer-container d-flex align-items-center justify-content-md-around">
+      <div class="copyright">
+        <div class="d-flex align-items-center">
+          <img src="./images/icons8-cc-32.png" alt="cc" class="copyright-icon">
+          <h5 class="mx-3">Aviation<br>Conference Nairobi</h5>
+        </div>
+      </div>
+      <p class="text-center text-md-start mx-md-5">2023 Aviation Conference Nairobi. Some Rights Reserved.</p>
+    </div>
+  </section>
+  
+
+  <!-----script tags---->
+  <script src="./main.js"></script>
+  <script src="https://kit.fontawesome.com/9e6b5903a6.js" crossorigin="anonymous"></script>
+  <!-- Add the Bootstrap JS and jQuery scripts for Bootstrap features (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
