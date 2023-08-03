@@ -60,7 +60,7 @@ It is a captivating web Page for an Aviation Conference Summit built with HTML, 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://lucy-sees.github.io/HTML-CSS---JavaScript-capstone-project/)
-- [Project Presentation Link](https://www.canva.com/design/DAFqgxuM0cU/EtB_by11S1nBNDxpG13xBw/edit?utm_content=DAFqgxuM0cU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Project Presentation Link](https://www.canva.com/design/DAFqgxuM0cU/EtB_by11S1nBNDxpG13xBw/edit?utm_content=DAFqgxuM0cU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
