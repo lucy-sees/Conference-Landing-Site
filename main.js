@@ -1,25 +1,18 @@
 /** Menu bar */
-const openMenuBar = document.getElementById('open-btn');
-const navWrapper = document.getElementById('navbar-wrapper');
-const closeBtn = document.getElementById('close-btn');
-const navLinks = document.querySelectorAll('.nav-menu-items li');
+const hambarButton = document.querySelector('.hambar');
+const closeButton = document.querySelector('.cross-btn');
+const hambarSection = document.querySelector('.ham-popup');
 
-openMenuBar.addEventListener('click', () => {
-  navWrapper.classList.toggle('active');
-  navWrapper.classList.toggle('open');
-});
+function showMenu() {
+  hambarSection.style.display = 'block';
+}
 
-closeBtn.addEventListener('click', () => {
-  navWrapper.classList.toggle('active');
-  navWrapper.classList.toggle('open');
-});
+function hideMenu() {
+  hambarSection.style.display = 'none';
+}
 
-navLinks.forEach((navLink) => {
-  navLink.addEventListener('click', () => {
-    navWrapper.classList.toggle('active');
-    navWrapper.classList.toggle('open');
-  });
-});
+hambarButton.addEventListener('click', showMenu);
+closeButton.addEventListener('click', hideMenu);
 
 /** Featured speakers section */
 const speakerContainer = document.getElementById('speaker-container');
@@ -107,12 +100,4 @@ moreButtonSection.addEventListener('click', () => {
   sponsorSection.classList.toggle('d-none');
   // Toggle the visibility of the credit section
   footerSection.classList.toggle('d-none');
-
-  // Update the "More" button text based on section visibility
-  // const moreButton = moreButtonSection.querySelector('.btn');
-  // if (sponsorSection.classList.contains('d-none')) {
-  //   moreButton.innerText = 'More';
-  // } else {
-  //   moreButton.innerText = 'Less';
-  // }
 });
