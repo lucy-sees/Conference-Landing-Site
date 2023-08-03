@@ -4,8 +4,12 @@
   #headline {
     background-image: url(./images/main-bg-img.png);
     background-size: cover;
-    position: relative; /* Ensure that z-index works correctly */
-    z-index: 0; /* Default z-index value for the background */
+    position: relative;
+
+    /* Ensure that z-index works correctly */
+    z-index: 0;
+
+    /* Default z-index value for the background */
   }
 
   .menu-bar {
@@ -20,129 +24,158 @@
     text-decoration: none;
   }
 
-  #navbar-wrapper {
+  /* Ham starts */
+  .ham-popup {
+    background: rgb(239, 81, 60);
     position: fixed;
+    height: 100%;
     width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    top: -100%;
-    left: 0;
-    background-color: #fff;
-    transition: all 0.5s ease;
+    z-index: 99;
+    display: none;
+    opacity: 0.9;
   }
 
-  #navbar-wrapper.open {
-    top: 0;
+  .ham-popup-ul {
+    padding-top: 10%;
   }
 
-  #navbar-wrapper i {
-    transform: scale(1.5);
-    color: var(--theme-color);
+  .cross-btn {
+    border: none;
+    background: none;
+    float: right;
   }
 
-  #navbar-wrapper i:hover {
-    transform: scale(1.5);
-    transition: all 700ms ease;
+  .ham-popup-item {
+    list-style: none;
+    padding-right: 3rem;
+    padding-top: 1.6%;
   }
 
-  .nav-menu-items {
-    width: 100%;
-    text-align: center;
-    padding-top: 3rem;
-  }
-
-  .nav-menu-items li {
-    padding: 12px 16px;
-    font-size: 20px;
+  .ham-popup-link {
+    text-decoration: none;
+    color: #f8f9fa;
     font-weight: 800;
-    text-decoration: none;
-    color: var(--theme-color);
-  }
-
-  .nav-menu-items a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .nav-menu-items li:hover {
-    background-color: var(--theme-color);
-    border-radius: 5px;
-    color: var(--gray-color);
-    font-style: italic;
-    transition: all 800ms;
-    transform: scale(1.2);
-  }
-
-  #navbar-wrapper.active {
-    display: block;
-    opacity: 1;
-  }
-
-  #intro {
-    margin-top: 4rem;
-    padding-bottom: 3rem;
-  }
-
-  .program-content h3 {
-    display: flex;
-    align-items: center;
-    padding-top: 4%;
-    color: #ff5438;
-    font-weight: 700;
-    font-size: 0.9rem;
-    margin-left: 3.4%;
-  }
-
-  .program-content p {
-    color: #fff;
-    font-weight: 700;
-    font-size: 0.66rem;
-    padding-top: 6%;
-    margin-left: 6.4%;
-    letter-spacing: 0.06em;
-  }
-
-  #intro-header h3 {
-    color: var(--theme-color);
     font-size: 2rem;
   }
 
-  #intro-header h1 {
-    font-size: 3rem;
-
-    /* background-image: url(./images/bg-image.png); */
-    background-size: cover;
-    color: #ff4f38;
-    font-weight: 800;
+  /* nav banner */
+  .nav-banner {
+    display: none;
   }
 
-  .intro-text-container {
-    width: 95%;
-    margin: 3rem auto;
-    border: 3px solid #fff;
+  /* navbar */
+  .hambar {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .navbar-content {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .hambar img {
+    width: 50%;
+  }
+
+  .navbar-brand img {
+    max-width: 50%;
+    margin-left: 50%;
+  }
+
+  .navbar-intro {
+    box-shadow: 0 15px 10px -15px #111;
+  }
+
+  /* .navbar-wrapper {
+    display: none;
+  } */
+
+  .navbar {
+    position: inherit;
+  }
+
+  /* navbar ends */
+
+  /* conference intro starts */
+
+  /* Apply reduced opacity to the background image using a pseudo-element */
+  .conference-intro {
     position: relative;
   }
 
-  .intro-text-container p {
-    padding: 10px 15px;
-    font-size: 16px;
+  .conference-intro::before {
+    content: "";
+    background-image: url(./images/plane-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 46%;
+    margin-top: 0.9%;
+    padding: 0;
+    padding-top: 8%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 
-  #date-time-container {
-    width: 95%;
-    margin: auto;
+  .conference-intro-greet {
+    position: relative;
+    padding-left: 2%;
+    color: #ec5242;
+    padding-top: 15%;
   }
 
-  #date-time-container h4 {
-    color: #4e4949;
+  .conference-intro-join {
+    padding-bottom: 5.4%;
+    color: #ec5242;
+    font-weight: 700;
+    padding-left: 2%;
+  }
+
+  .conference-intro-desc {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #515151;
+    padding-top: 3.05%;
+    padding-bottom: 3.05%;
+    padding-left: 2.4%;
+    padding-right: 2.4%;
+    background: #f8f8f8;
+    border: 8.49673px solid #fff;
+  }
+
+  .conference-intro-time {
+    color: #595959;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
     font-weight: 900;
-    font-size: 1.8rem;
+    font-size: 1.25rem;
+    padding-left: 2%;
+    padding-top: 5.4%;
+    margin: 0;
   }
 
-  #date-time-container p {
-    margin-top: 0.5rem;
-    color: #4e4949;
-    font-size: 1rem;
+  .conference-intro-venue {
+    color: #868686;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.815rem;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 20%;
   }
 
   /* Main program starts */
@@ -172,11 +205,32 @@
     display: flex;
     background: rgba(255, 255, 255, 0.1);
     margin-bottom: 0.8%;
-    flex-direction: row;
   }
 
   .image-wrap {
     display: flex;
+    height: 50%;
+    width: 50%;
+    align-self: center;
+  }
+
+  .program-content h3 {
+    display: flex;
+    align-items: center;
+    padding-top: 4%;
+    color: #ff5438;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-left: 3.4%;
+  }
+
+  .program-content p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.66rem;
+    padding-top: 6%;
+    margin-left: 6.4%;
+    letter-spacing: 0.06em;
   }
 
   .join-btn {
@@ -193,8 +247,6 @@
   .see-program {
     display: none;
   }
-
-  /* Main program ends */
 
   .box-container {
     border: 1px solid var(--gray-color);
