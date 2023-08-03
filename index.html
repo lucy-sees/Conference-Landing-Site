@@ -20,7 +20,7 @@
 </head>
 
 <body class="mx-0">
-  <section id="headline" class="container-fluid m-sm-0 m-lg-0 mx-0">
+  <section id="headline" class=" m-sm-0 m-lg-0 mx-0">
     <header>
       <div class="contact-icon-container container-fluid p-4 d-md-flex justify-content-end align-items-center d-none">
         <div class="icons d-flex justify-content-around w-25 align-items-center">
@@ -31,151 +31,152 @@
           <span class="text-white">Log Out</span>
         </div>
       </div>
-      <!-- navbar -->
-      <nav class="d-none d-md-block d-md-flex justify-content-between desktop-navbar container-fluid">
-        <div class="logo-container navbar-brand d-flex fw-bolder">
-          <a href="./index.html">
-            <div class="d-flex"><i class="fas fa-plane d-inline-flex text-dark-emphasis fs-4 p-0"></i><p class="brand text-dark-emphasis fs-3">AVIATOR</p></div>
-          </a>
-        </div>
-        <ul class="nav-container d-flex align-items-center">
-          <li><a href="./index.html" id="first-child">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="#headline">Program</a></li>
-          <li><a href="#join-program">Join</a></li>
-          <li><a href="#sponsor-section">Sponsors</a></li>
-          <li><a href="#speakers-featured-section">News</a></li>
-          <li><a href="#footer-section" id="last-child">AV Campaign</a></li>
+
+      <!-- Hamburger section -->
+      <section class="ham-popup d-lg-none">
+        <button class="cross-btn m-5">
+          <img src="./images/cross.png" alt="">
+        </button>
+        <ul class="ham-popup-ul">
+          <li class="ham-popup-item">
+            <a class="ham-popup-link" href="about.html">About</a>
+          </li>
+          <li class="ham-popup-item">
+            <a class="ham-popup-link" href="#">Program</a>
+          </li>
+          <li class="ham-popup-item">
+            <a class="ham-popup-link" href="#">Join</a>
+          </li>
+          <li class="ham-popup-item">
+            <a class="ham-popup-link" href="#">Sponsor</a>
+          </li>
+          <li class="ham-popup-item">
+            <a class="ham-popup-link" href="#">News</a>
+          </li>
         </ul>
-      </nav>
-      <div class="menu-bar d-block d-md-none"><i class="fa-solid fa-bars p-3" id="open-btn"></i></div>
-      <nav id="navbar-wrapper" class="d-md-none">
+      </section>
 
-        <div id="nav-wrapper">
-          <div class="logo-container">
-            <a href="./index.html">
-              <div class="d-flex"><i class="fas fa-plane d-inline-flex text-dark-emphasis fs-4 p-0 m-5"></i><p class="brand text-dark-emphasis fs-3">AVIATOR</p></div>
-            </a>
-            <i class="fa-solid fa-xmark fs-1 ps-5 pt-4" id="close-btn"></i>
-          </div>
-          <ul class="nav-menu-items">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#headline">Program</a></li>
-            <li><a href="#join-program">Join</a></li>
-            <li><a href="#sponsor-section">Sponsors</a></li>
-            <li><a href="#speakers-featured-section">News</a></li>
-            <li><a href="#footer-section">AV Campaign</a></li>
-          </ul>
-        </div>
-      </nav>
+      <!-- navbar starts -->
+      <section class="navbar-intro">
+        <section class="container">
+          <nav class="navbar">
+            <div id="no-wrap" class="container-fluid navbar-content">
+              <div class="navbar-wrapper d-none d-lg-flex flex-row-reverse align-items-center">
+                <ul class="navbar-ul navbar-right ml-lg-auto">
+                  <li class="navbar-item">
+                    <a class="navbar-link" href="./about.html">About</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a class="navbar-link" href="#">Program</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a class="navbar-link" href="#">Join</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a class="navbar-link" href="#">Sponsor</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a class="navbar-link" href="#">News</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="./index.html" class="text-decoration-none">
+                <div class="d-flex">
+                  <i class="fas fa-plane d-inline-flex text-body-emphasis fs-4"></i>
+                  <p class="navbar-brand text-black-500 fs-3 mx-lg-2">AVIATOR</p>
+                </div>
+              </a>
+              <button class="hambar">
+                <img src="./images/mobile_menu 1.png" alt="">
+              </button>
+            </div>
+          </nav>
+        </section>
+      </section>
+
+      <!-- Conference intro  -->
+      <header class="conference-intro container-fluid">
+        <article class="container d-flex flex-column mx-lg-5 px-lg-5">
+          <h3 class="conference-intro-greet">Hello there! Aviators,</h3>
+          <h1 class="conference-intro-join">Join The Future of Aviation
+            Conference</br>2023
+          </h1>
+          <p class="conference-intro-desc">
+            Welcome to the most extraordinary and intellectually stimulating event of the century – The Future of
+            Aviation Conference!
+          </p>
+          <h2 class="conference-intro-time">2023.09.7(THU) ~ 15(FRI)</h2>
+          <h5 class="conference-intro-venue">@ Dedan Kimathi Street, Nairobi</h5>
+        </article>
+      </header>
+
+      <!-- Main program starts -->
+      <article class="main-program">
+        <section class="main-program-wrapper container">
+          <section class="main-program-header">
+            <h2>Main Program</h2>
+            <div class="main-border"></div>
+          </section>
+          <section class="main-program-contents container">
+            <div class="row">
+              <div class="program-content col-md-2">
+                <div class="image-wrap">
+                  <img class="solo-content" src="./images/lecture.svg" alt="lecture">
+                </div>
+                <h3>Lecture</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia iusto hic
+                  nam vitae amet modi, natus repellat!
+                </p>
+              </div>
+              <div class="program-content col-md-2">
+                <div class="image-wrap">
+                  <img class="solo-content" src="./images/exhibition.svg" alt="exhibition">
+                </div>
+                <h3>Exhibition</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia iusto hic
+                  nam vitae amet modi, natus repellat!
+                </p>
+              </div>
+              <div class="program-content col-md-2">
+                <div class="image-wrap">
+                  <img class="solo-content" src="./images/forum.svg" alt="forum">
+                </div>
+                <h3>Forum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia iusto hic
+                  nam vitae amet modi, natus repellat! </p>
+              </div>
+              <div class="program-content col-md-2">
+                <div class="image-wrap">
+                  <img class="solo-content" src="./images/station.svg" alt="workshop">
+                </div>
+                <h3>Workshop</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia iusto hic
+                  nam vitae amet modi, natus repellat</p>
+              </div>
+              <div class="program-content col-md-2">
+                <div class="image-wrap">
+                  <img class="solo-content" src="./images/ignite.svg" alt="ignite">
+                </div>
+                <h3>AV ignite</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia iusto hic
+                  nam vitae amet modi, natus repellat</p>
+              </div>
+            </div>
+            <div class="see-program d-sm-none d-lg-block">
+              <a href="#">SEE THE WHOLE PROGRAM</a>
+            </div>
+            <div class="join-btn">
+              <button type="button" class="join btn btn-lg">Join Now!</button>
+            </div>
+          </section>
+        </section>
+      </article>
     </header>
-
-    <!-- headline section  -->
-    <section id="intro">
-      <div class="row">
-        <div class="col" id="intro-header">
-          <h3>"Hello there, aviators!"</h3>
-          <h1>The Future of Aviation<br> Conference 2023</h1>
-        </div>
-        <div class="intro-text-container">
-          <p>Welcome to the most extraordinary and intellectually stimulating event of the century – The Future of
-            Aviation Conference.</p>
-        </div>
-        <div id="date-time-container">
-          <h4>2023.09.7(THU) ~ 15(FRI)</h4>
-          <p>Dedan Kimathi Street Nairobi</p>
-        </div>
-    </section>
-
   </section>
-
-  <!-- Main program starts -->
-  <article class="main-program">
-    <section class="main-program-wrapper container">
-      <section class="main-program-header">
-        <h2>Main Program</h2>
-        <div class="main-border"></div>
-      </section>
-      <section class="main-proram-contents container">
-        <div class="row">
-
-          <div class="program-content col col-md-2">
-            <div class="image-wrap row align-self-center">
-              <img class="solo-content" src="./images/lecture.svg" alt="lecture">
-            </div>
-            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">Lecture</span></div>
-            <div class="col-7  col-md-12 ps-3 px-md-0 pe-0">
-              <p class="fw-bold text-white text-center">Immerse yourself in captivating lectures from renowned
-                  aviation pioneers, as they share their invaluable experiences and visionary insights.</p>
-            </div>
-          </div>
-
-          <div class="program-content col col-md-2">
-            <div class="image-wrap row align-self-center">
-              <img class="solo-content" src="./images/exhibition.svg" alt="exhibition">
-            </div>
-            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">Exhibition</span></div>
-            <div class="col-7 col-md-12 ps-3 pe-0 px-md-0">
-              <p class="fw-bold text-white text-center">At our conference, participants will engage in
-                collaborative knowledge exchange, fostering an environment of shared ideas and
-                groundbreaking discoveries.</p>
-            </div>
-          </div>
-
-          <div class="program-content col col-md-2">
-            <div class="image-wrap row align-self-center">
-              <img class="solo-content" src="./images/forum.svg" alt="lecture">
-            </div>
-            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">Forum</span></div>
-            <div class="col-7 col-md-12 ps-3 pe-0 px-md-0">
-              <p class="fw-bold text-white text-center">Join us for an interactive forum where industry
-                  leaders and enthusiasts alike come together to discuss the latest trends and advancements in
-                  the field of aviation.</p>
-            </div>
-          </div>
-          <div class="program-content col col-md-2">
-            <div class="image-wrap row align-self-center">
-              <img class="solo-content" src="./images/station.svg" alt="lecture">
-            </div>
-            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">Workshop</span></div>
-            <div class="col-7 col-md-12 ps-3 px-md-0 pe-0">
-              <p class="fw-bold text-white text-center">Dive into hands-on workshops led by experts, honing
-                    your skills and gaining practical insights into cutting-edge aviation technologies and
-                    practices.</p>
-            </div>
-          </div>
-
-          <div class="program-content col col-md-2">
-            <div class="image-wrap row align-self-center">
-              <img class="solo-content" src="./images/ignite.svg" alt="lecture">
-            </div>
-            <div class="col-3 col-md-12 text-md-center "><span class="fw-bold semi-title">AV Ignite</span></div>
-            <div class="col-7 col-md-12 ps-3 pe-0">
-              <p class="fw-bold text-white text-center">Forge meaningful connections with like-minded
-                individuals and industry professionals, expanding your professional network and paving the
-                way for future collaborations.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="join-btn">
-          <button type="button" class="join btn btn-lg">Join Now!</button>
-        </div>
-
-        <div class="see-program-text-container d-none d-md-block">
-          <a href="" class="">
-            <h5 class="text-white text-uppercase">See the Whole Program</h5>
-          </a>
-        </div>
-      </section>
-    </section>
-  </article>
-
   <!-- featured speakers -->
-  <section id="speakers-featured-section" class="">
+  <section id="speakers-featured-section" class="mt-5">
     <h2 class="text-center text-black fw-bold " id="feature-title">Featured Speakers</h2>
-    <div class="line"></div>
+    <div class="main-border"></div>
     <div class="row speaker-container row-cols-1 row-cols-md-2 mt-5" id="speaker-container">
 
     </div>
@@ -184,14 +185,15 @@
   <!-- more button -->
   <section id="more-button-section" class="container-fluid">
     <div class="more-button-container container mt-5">
-      <button type="button" class="btn btn-default border btn-lg w-100 mb-5">More<i class="fa fa-chevron-down m-2 orange-chevron"></i></button>
+      <button type="button" class="btn btn-default border btn-lg w-100 mb-5 d-lg-none">More<i
+          class="fa fa-chevron-down m-2 orange-chevron"></i></button>
     </div>
   </section>
 
   <!-- sponsors  -->
   <section class="container-fluid d-none d-md-block d-lg-block" id="sponsor-section">
-     <h2 class="text-center " id="sponsor-title">Partner</h2>
-    <div id="middle-line"></div>
+    <h2 class="text-center " id="sponsor-title">Partner</h2>
+    <div class="main-border"></div>
     <div class="d-flex partners flex-wrap">
       <img src="./images/SpaceX.png" alt="SpaceX" class="logo-img">
       <img src="./images/KenyaAirways.png" alt="KenyaAirways" class="logo-img">
@@ -213,7 +215,7 @@
       <p class="text-center text-md-start mx-md-5">2023 Aviation Conference Nairobi. Some Rights Reserved.</p>
     </div>
   </section>
-  
+
 
   <!-----script tags---->
   <script src="./main.js"></script>
