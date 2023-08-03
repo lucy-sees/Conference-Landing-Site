@@ -1,6 +1,17 @@
 @import url(./style.css);
 @import url(./mobile.css);
 
+.ham-popup {
+  background: rgb(239, 81, 60);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: none;
+  opacity: 0.9;
+  margin: 0;
+}
+
 #about-intro-header h3 {
   color: red;
   font-size: 1.2rem;
@@ -44,7 +55,7 @@
 .highlight {
   border: 2px solid var(--theme-color);
   max-width: 75%;
-  margin: 5px  auto;
+  margin: 5px auto;
 }
 
 #logo-section {
@@ -147,8 +158,8 @@
 }
 
 .footer-container img {
-  width: 6rem;
-  height: 6rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 5px;
 }
 
@@ -163,8 +174,4 @@
   color: var(--dark-color);
   font-size: 1rem;
   font-weight: 600;
-}
-
-.copyright-icon {
-  font-size: 1.5rem;
 }
